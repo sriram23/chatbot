@@ -37,7 +37,7 @@ public class bot {
 			else if(msg.equals("How are you"))
 				System.out.println("bot:I'm fine. How about you");
 			else{
-				int dom = rand.nextInt(15);
+				int dom = rand.nextInt(20);
 				switch(dom){
 				case 0:
 					temp = "I am a coding lover. What about you?";
@@ -86,6 +86,18 @@ public class bot {
 					break;
 				case 15:
 					temp = "LoL!..";
+					break;
+				case 16:
+					temp = "Sorry! I can't understand what you said";
+					break;
+				case 17:
+					temp = "Do you hear songs??";
+					break;
+				case 18:
+					temp = "Tell me about your profession..";
+					break;
+				case 19:
+					temp = "When I start typing few lines of code, I used to get hell lot of errors..LoL..";
 					break;
 				}
 				System.out.println("bot: "+temp);
