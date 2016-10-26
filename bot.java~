@@ -4,7 +4,6 @@ public class bot {
 	public static void main(String args[]) throws IOException{
 		String msg = "";
 		String temp = "";
-		Random rand = new Random();
 		while(msg != null){
 			System.out.println("Enter Message:");
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -13,30 +12,12 @@ public class bot {
 				System.out.println("Good bye!");
 				break;
 			}
-			else if(msg.equals("Hi")){
-				int ran = rand.nextInt(5);
-				switch(ran){
-				case 0:
-					temp = "Hi too";
-					break;
-				case 1:
-					temp = "Feeling great!";
-					break;
-				case 2:
-					temp = "It's going to be a great day.";
-					break;
-				case 3:
-					temp = "Salutations!";
-					break;
-				case 4:
-					temp = "Greetings!";
-					break;
-				}
-				System.out.println("bot: "+temp);
-			}
+			else if(msg.equals("Hi"))
+				System.out.println("bot: Hi too");
 			else if(msg.equals("How are you"))
 				System.out.println("bot:I'm fine. How about you");
 			else{
+				Random rand = new Random();
 				int dom = rand.nextInt(15);
 				switch(dom){
 				case 0:
@@ -93,4 +74,3 @@ public class bot {
 		}
 	}
 }
-
