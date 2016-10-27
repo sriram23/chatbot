@@ -46,7 +46,7 @@ public class bot {
 					temp = "You must have a unique dream. Your dreams are the things that makes you much stronger";
 					break;
 				case 2:
-					temp = "It's boring na.. Speak something.";
+					temp = "It's boring na.. Say something.";
 					break;
 				case 3:
 					temp = "What do u think about me?";
